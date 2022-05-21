@@ -43,7 +43,7 @@ def password_decryption(password, encryption_key):
 
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('127.0.0.1', 8080))
+client.connect(('192.168.20.1', 8080))
 while True:
 
 
